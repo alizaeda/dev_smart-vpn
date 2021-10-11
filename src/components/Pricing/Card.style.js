@@ -24,9 +24,7 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const Img = styled.img`
-  /* width: 100%; */
-`;
+export const Img = styled.img``;
 
 export const CardTitle = styled.h2`
   margin: 30px 0;

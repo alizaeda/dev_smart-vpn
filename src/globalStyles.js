@@ -68,11 +68,25 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+
+
   body {
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     color: var(--color-primary);
   }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: #ccc;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 4px;
+  }
+
 `;
 
 export const Container = styled.div`
