@@ -93,10 +93,7 @@ export const Container = styled.div`
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  //alt
   max-width: 1140px;
-  /* padding-right: 20px; */
-  /* padding-left: 20px; */
 
   @media ${device.medium} {
     padding-right: 15px;
@@ -106,6 +103,22 @@ export const Container = styled.div`
 
 export const Bold = styled.span`
   font-weight: bold;
+`;
+
+export const SectionHeader = styled.h2`
+  font-size: var(--f5);
+  line-height: 50px;
+  color: var(--primary);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+`;
+
+export const SectionDesc = styled.p`
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--gray);
+  text-align: center;
 `;
 
 export default GlobalStyle;

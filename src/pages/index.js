@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Features from "../components/Features";
 import Hero from "../components/HeroSection";
 import Navbar from "../components/Navbar";
+import Network from "../components/Network";
 import Pricing from "../components/Pricing";
 import Sidebar from "../components/Sidebar";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero />
       <Features />
       <Pricing />
+      <Network />
     </>
   );
 };
