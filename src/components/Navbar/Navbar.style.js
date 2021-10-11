@@ -33,6 +33,11 @@ export const NavbarItems = styled.ul`
 `;
 
 export const NavbarItem = styled.li`
+  transition: var(--transition);
+  &:hover {
+    transform: translateY(-1px);
+  }
+
   &:not(:last-child) {
     margin-right: 40px;
   }
