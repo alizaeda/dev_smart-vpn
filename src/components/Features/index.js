@@ -23,7 +23,7 @@ import {
 
 const Features = () => {
   return (
-    <Container>
+    <Container id='features'>
       <CounterWrapper>
         <Counter>
           <CounterIcon>

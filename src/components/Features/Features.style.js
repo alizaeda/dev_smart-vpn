@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "../../globalStyles";
-import { BsFillCheckCircleFill } from "react-icons/bs";
 
 export const CounterWrapper = styled.div`
   display: flex;
@@ -135,12 +134,9 @@ export const FeaturesList = styled.ul`
 export const FeatureItem = styled.li`
   color: var(--gray);
   font-size: var(--f1);
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
-`;
-
-export const ItemIcon = styled(BsFillCheckCircleFill)`
-  color: "#2FAB73";
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
 `;

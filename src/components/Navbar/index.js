@@ -19,31 +19,33 @@ const Navbar = ({ toggleMenu }) => {
     <Container>
       <NavbarWrapper>
         <NavbarBrand>
-          <Img src={Logo} alt="Logo" />
+          <Img src={Logo} alt='Logo' />
         </NavbarBrand>
         <NavbarItems>
           <NavbarItem>
-            <NavbarLink to="about">About</NavbarLink>
+            <NavbarLink to='about' offset={-100} spy={true} exact={true}>
+              About
+            </NavbarLink>
           </NavbarItem>
           <NavbarItem>
-            <NavbarLink to="about">Features</NavbarLink>
+            <NavbarLink to='features'>Features</NavbarLink>
           </NavbarItem>
           <NavbarItem>
-            <NavbarLink to="about">Pricing</NavbarLink>
+            <NavbarLink to='about'>Pricing</NavbarLink>
           </NavbarItem>
           <NavbarItem>
-            <NavbarLink to="about">Testimonials</NavbarLink>
+            <NavbarLink to='about'>Testimonials</NavbarLink>
           </NavbarItem>
           <NavbarItem>
-            <NavbarLink to="about">Help</NavbarLink>
+            <NavbarLink to='about'>Help</NavbarLink>
           </NavbarItem>
         </NavbarItems>
         <NavbarMenuIcon onClick={toggleMenu}>
           <HiMenuAlt3 size={35} />
         </NavbarMenuIcon>
         <NavbarButtons>
-          <Button to="/signin">Sign In</Button>
-          <Button to="/signup">Sign Up</Button>
+          <Button to='/signin'>Sign In</Button>
+          <Button to='/signup'>Sign Up</Button>
         </NavbarButtons>
       </NavbarWrapper>
     </Container>
