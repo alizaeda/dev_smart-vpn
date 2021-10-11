@@ -75,6 +75,9 @@ export const Button = styled(LinkRouter)`
   &:hover {
     color: var(--red);
   }
+  &:active {
+    transform: scale(1.02);
+  }
   &:last-of-type {
     margin-left: 30px;
     border-radius: 50px;

@@ -77,16 +77,13 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  /* max-width: 1100px; */
   width: 100%;
-  /* padding-right: 15px; */
-  /* padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
   //alt
-  max-width: 1300px;
-  padding-right: 50px;
-  padding-left: 50px;
+  max-width: 1140px;
+  /* padding-right: 20px; */
+  /* padding-left: 20px; */
 
   @media ${device.medium} {
     padding-right: 15px;

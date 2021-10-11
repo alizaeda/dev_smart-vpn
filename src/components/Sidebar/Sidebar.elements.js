@@ -11,6 +11,7 @@ export const SidebarWrapper = styled.div`
   background-color: #eee;
   padding: 50px;
   transition: var(--transition);
+  z-index: 999;
 `;
 
 export const SidebarLogo = styled(LinkRouter)`

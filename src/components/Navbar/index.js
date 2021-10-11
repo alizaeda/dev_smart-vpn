@@ -12,7 +12,7 @@ import {
   NavbarItems,
   NavbarMenuIcon,
   NavbarWrapper,
-} from "./Navbar.elements";
+} from "./Navbar.style";
 
 const Navbar = ({ toggleMenu }) => {
   return (
