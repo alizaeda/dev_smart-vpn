@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Features from "../components/Features";
 import Hero from "../components/HeroSection";
 import Navbar from "../components/Navbar";
+import Pricing from "../components/Pricing";
 import Sidebar from "../components/Sidebar";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggleMenu={toggleMenu} />
       <Hero />
       <Features />
+      <Pricing />
     </>
   );
 };
