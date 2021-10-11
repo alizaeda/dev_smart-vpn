@@ -26,7 +26,9 @@ const Hero = () => {
               Provide a network for all your needs with ease and fun using
               <Strong> SmartVPN</Strong> discover interesting features from us.
             </ContentText>
-            <ContentButton>Get Started</ContentButton>
+            <ContentButton big to='/signin'>
+              Get Started
+            </ContentButton>
           </HeroContent>
           <HeroImgWrapper>
             <Img src={heroImg} alt='hero' />

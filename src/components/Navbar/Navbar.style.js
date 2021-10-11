@@ -7,8 +7,7 @@ export const NavbarWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 50px 0; */
-  padding: 20px 0;
+  padding: 50px 0;
 `;
 
 export const NavbarBrand = styled.div``;

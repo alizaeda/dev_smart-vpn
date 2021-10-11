@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../globalStyles";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 
 export const CounterWrapper = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ export const CounterWrapper = styled.div`
   margin-top: 103px;
 
   border-radius: var(--br1);
-  @media ${device.medium} {
+  @media ${device.large} {
     flex-direction: column;
   }
 `;
@@ -30,7 +31,7 @@ export const Counter = styled.div`
     background-color: #eeeff2;
     right: 0;
   }
-  @media ${device.medium} {
+  @media ${device.large} {
     padding-right: 0 !important;
     margin-bottom: 100px;
     &:before {
@@ -63,4 +64,83 @@ export const CounterInt = styled.h3`
 export const CounterText = styled.p`
   font-size: var(--f3);
   color: var(--gray);
+`;
+
+export const OurFeaturesWrapper = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 95.8px;
+  margin-bottom: 126px;
+
+  @media ${device.medium} {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const OurFeaturesImg = styled.img`
+  width: 50%;
+  margin-right: 169.5px;
+
+  @media ${device.medium} {
+    width: 100%;
+    margin: auto;
+  }
+`;
+
+export const OurFeaturesContent = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: wrap;
+
+  @media ${device.medium} {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+`;
+
+export const Heading = styled.h2`
+  font-size: var(--f5);
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 20px;
+
+  @media ${device.medium} {
+    font-size: var(--f4);
+  }
+`;
+
+export const Text = styled.p`
+  color: var(--gray);
+  margin-bottom: 20px;
+`;
+
+export const FeaturesList = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media ${device.medium} {
+    width: 100%;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+`;
+
+export const FeatureItem = styled.li`
+  color: var(--gray);
+  font-size: var(--f1);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+`;
+
+export const ItemIcon = styled(BsFillCheckCircleFill)`
+  color: "#2FAB73";
+  margin-right: 10px;
 `;

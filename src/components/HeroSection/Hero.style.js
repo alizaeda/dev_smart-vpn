@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../globalStyles";
+import Button from "../Button";
 
 export const HeroWrapper = styled.div`
   display: flex;
@@ -48,36 +49,6 @@ export const ContentText = styled.p`
   }
 `;
 
-export const ContentButton = styled.button`
-  align-self: flex-start;
-  font-weight: 700; // need to edit
-  font-size: 16px;
-  color: var(--primary);
-  transition: var(--transition);
-  border-radius: var(--br1);
-  color: #fff;
-  background-color: var(--red);
-  border: none;
-  padding: 17.5px 77.5px;
-  cursor: pointer;
-  box-shadow: 0px 35px 54px rgba(245, 56, 56, 0.35);
-
-  &:hover {
-    background-color: #fff;
-    border: 1px solid var(--red);
-    color: var(--red-alt);
-    transform: scale(0.9);
-    box-shadow: 0px 15px 25px rgba(245, 56, 56, 0.35);
-  }
-  &:active {
-    transform: scale(1.02);
-  }
-
-  @media ${device.large} {
-    margin: auto;
-  }
-`;
-
 export const HeroImgWrapper = styled.div`
   width: 50%;
   display: flex;
@@ -91,4 +62,12 @@ export const HeroImgWrapper = styled.div`
 
 export const Img = styled.img`
   width: 100%;
+`;
+
+export const Test = styled.button`
+  ${Button}
+`;
+
+export const ContentButton = styled(Button)`
+  align-self: flex-start;
 `;

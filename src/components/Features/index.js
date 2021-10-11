@@ -2,7 +2,9 @@ import React from "react";
 import { MdLocationOn } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { HiServer } from "react-icons/hi";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 import { Container } from "../../globalStyles";
+import featureImg from "../../images/Illustration-2.png";
 import {
   Counter,
   CounterContent,
@@ -10,6 +12,13 @@ import {
   CounterInt,
   CounterText,
   CounterWrapper,
+  FeatureItem,
+  FeaturesList,
+  Heading,
+  OurFeaturesContent,
+  OurFeaturesImg,
+  OurFeaturesWrapper,
+  Text,
 } from "./Features.style";
 
 const Features = () => {
@@ -44,6 +53,50 @@ const Features = () => {
           </CounterContent>
         </Counter>
       </CounterWrapper>
+      <OurFeaturesWrapper>
+        <OurFeaturesImg src={featureImg}></OurFeaturesImg>
+        <OurFeaturesContent>
+          <Heading>We Provide Many Features You Can Use</Heading>
+          <Text>
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </Text>
+          <FeaturesList>
+            <FeatureItem>
+              <BsFillCheckCircleFill
+                color='#2FAB73'
+                style={{ marginRight: "12px" }}
+                size={20}
+              />
+              Powerfull online protection.
+            </FeatureItem>
+            <FeatureItem>
+              <BsFillCheckCircleFill
+                color='#2FAB73'
+                style={{ marginRight: "12px" }}
+                size={20}
+              />
+              Internet without borders.
+            </FeatureItem>
+            <FeatureItem>
+              <BsFillCheckCircleFill
+                color='#2FAB73'
+                style={{ marginRight: "12px" }}
+                size={20}
+              />
+              Supercharged VPN
+            </FeatureItem>
+            <FeatureItem>
+              <BsFillCheckCircleFill
+                color='#2FAB73'
+                style={{ marginRight: "12px" }}
+                size={20}
+              />
+              No specific time limits.
+            </FeatureItem>
+          </FeaturesList>
+        </OurFeaturesContent>
+      </OurFeaturesWrapper>
     </Container>
   );
 };
