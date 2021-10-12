@@ -106,19 +106,22 @@ export const Bold = styled.span`
 `;
 
 export const SectionHeader = styled.h2`
+  width: 383.41px;
   font-size: var(--f5);
   line-height: 50px;
   color: var(--primary);
   text-align: center;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 `;
 
 export const SectionDesc = styled.p`
+  width: 555px;
   font-weight: 500;
   line-height: 30px;
   color: var(--gray);
   text-align: center;
+  margin: auto;
 `;
 
 export default GlobalStyle;

@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Network from "../components/Network";
 import Pricing from "../components/Pricing";
 import Sidebar from "../components/Sidebar";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
       <Features />
       <Pricing />
       <Network />
+      <Testimonial />
     </>
   );
 };
